@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #0d0d0d;
+  font-family: "Anta";
+}
+
+/* NAV START */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: #0d0d0d;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar h3 {
+  color: #e00bd9;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.navbar a {
+  color: #e00bd9;
+  font-size: 1.2rem;
+  transition: 0.3s !important;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  line-height: 1px;
+}
+
+.navbar button {
+  padding: 5px 10px;
+  background: transparent;
+  border: 2px solid #e00bd9;
+  color: #e00bd9;
+  border-radius: 5px;
+}
+
+.navbar button:hover {
+  color: #fe86fa;
+  border: 2px solid #fe86fa;
+}
+
+/* HEAD START*/
+.head {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 0) 0%,
+      rgba(13, 13, 13, 1) 97%
+    ),
+    url(/img/home3.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.head-left {
+  width: 50%;
+  padding: 30px;
+}
+
+.head-left h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #e00bd9;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.head-left p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #e00bd9;
+}
+
+.head-left button {
+  padding: 5px 15px;
+  background: transparent;
+  border: none;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  border: 2px solid #e00bd9;
+  color: #e00bd9;
+  font-size: 0.9rem;
+  transition: 0.3s !important;
+}
+
+.head-left button:hover {
+  color: #fe86fa;
+  border: 2px solid #fe86fa;
+}
+
+.head-right {
+  width: 50%;
+}
+
+.head-right img {
+  width: 100%;
+  /* height: 400px; */
+  object-fit: cover;
+  filter: hue-rotate(100deg);
+  /* animation: imgColor 10s ease-in-out infinite; */
+}
+
+@keyframes imgColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(120deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
